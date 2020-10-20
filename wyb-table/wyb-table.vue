@@ -143,7 +143,7 @@
 						 backgroundColor: autoContentBgColor(cIndex, hIndex),
 						 minHeight: (minHeight[1] || minHeight[0]) + 'rpx',
 						 padding: padding[0] + 'rpx ' + (padding[1] || padding[0]) + 'rpx',
-						 borderBottom: hIndex === headers.length - 1 ? '1px solid' + borderColor : 'none',
+						 borderBottom: cIndex === contents.length - 1 ? '1px solid' + borderColor : 'none',
 						 borderRight: hIndex === headers.length - 1 || (!showVertBorder && hIndex !== 0) ? 'none' : '1px solid' + borderColor,
 						 zIndex: hIndex === 0 ? 20 : 0,
 						 left: enableCheck ? checkColWidth + 'rpx' : 0,
